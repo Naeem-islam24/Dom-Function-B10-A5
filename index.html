@@ -12,12 +12,12 @@
 
 <body>
     <header>
-        <nav class="gap-5 p-5 pt-3 pb-6 lg:fixed w-full fixed backdrop-filter backdrop-blur-lg">
+        <nav class="gap-5 p-5 pt-2 pb-6 lg:fixed  w-full fixed backdrop-filter backdrop-blur-lg">
 
-            <div class="flex items-center justify-around">
+            <div class="flex items-center  bg-slate-100 justify-around bg-gray  ">
 
                 <div>
-                    <button class="btn btn-active bg-lime-400 font-bold text-lg px-8">Blog</button>
+                    <button id="goToPageButton" class="btn btn-active bg-lime-400 font-bold text-lg px-8">Blog</button>
 
                 </div>
 
@@ -33,17 +33,15 @@
                     <h1 class="font-bold text-lg">
                         <span id="my-balance">5500</span> BDT
                     </h1>
-
                 </div>
-
             </div>
-            <br>
 
+            <br>
             <br>
 
             <div class=" flex justify-center">
-                <button id="donate-btn" class="btn btn-active bg-lime-400 font-bold px-8 mr-5">Donation</button>
-                <button id="history-btn" class="btn btn-active bg-lime-400 font-bold px-8 ">History</button>
+                <button id="donate-btn" class="btn btn-active hover:bg-lime-400 font-bold px-8 mr-5">Donation</button>
+                <button id="history-btn" class="btn btn-active hover:bg-lime-400 font-bold px-8 ">History</button>
 
             </div>
         </nav>
@@ -91,6 +89,7 @@
 
                 </div>
             </div>
+
 
             <!-- Second Part relief -->
             <div class=" grid lg:grid-cols-2 grid-cols-1  p-4 border-solid rounded-lg border-1 border-slate-100 ">
@@ -168,11 +167,12 @@
         <!-- history parts -->
         <div id="history-part" class="hidden">
 
-            <h2 class="text-2xl text-centerborder px-4 py-2 border border-solid rounded-lg text-center bg-lime-400 mb-5">Transaction History of Donation</h2>
-
+            <h2
+                class="text-2xl text-centerborder px-4 py-2 border border-solid rounded-lg text-center bg-lime-400 mb-5">
+                Transaction History of Donation</h2>
             <div id="history-container" class="space-y-4">
-               
-        </div>
+            </div>
+            <!-- history parts end-->
 
     </main>
 
@@ -182,6 +182,7 @@
     <script src="Js File/domwithjs.js"></script>
     <script src="Js File/blog.js"></script>
     <script src="Js File/Utilities.js"></script>
+    <script src="Js File/blog.js"></script>
 </body>
 
 </html>
